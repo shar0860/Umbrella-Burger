@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Umbrella Burger — Gourmet Burgers, Crafted Under One Roof</title>
+  <meta name="description" content="Umbrella Burger — Mumbai's home of dark-fired gourmet burgers. Handcrafted patties, house-baked brioche, and shelter from ordinary food." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23e3b04b'%3E%3Cpath d='M12 2C6.2 2 1.6 6.4 1.2 12h21.6C22.4 6.4 17.8 2 12 2z'/%3E%3Cpath d='M11 13v6.2a2.8 2.8 0 0 0 5.6 0V18h-2v1.2a.8.8 0 0 1-1.6 0V13h-2z'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ══════════ PRELOADER ══════════ -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <svg class="preloader-umbrella" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M12 2C6.2 2 1.6 6.4 1.2 12h21.6C22.4 6.4 17.8 2 12 2z"/>
+        <path d="M11 13v6.2a2.8 2.8 0 0 0 5.6 0V18h-2v1.2a.8.8 0 0 1-1.6 0V13h-2z"/>
+      </svg>
+      <span class="preloader-text">Umbrella Burger</span>
+    </div>
+  </div>
+
+  <!-- ══════════ NAVBAR ══════════ -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#home" class="brand">
+        <svg class="brand-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 2C6.2 2 1.6 6.4 1.2 12h21.6C22.4 6.4 17.8 2 12 2z"/>
+          <path d="M11 13v6.2a2.8 2.8 0 0 0 5.6 0V18h-2v1.2a.8.8 0 0 1-1.6 0V13h-2z"/>
+        </svg>
+        <span class="brand-name">Umbrella<em>Burger</em></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="#home" class="nav-link is-active">Home</a>
+        <a href="#story" class="nav-link">Our Story</a>
+        <a href="#menu" class="nav-link">Menu</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#reviews" class="nav-link">Reviews</a>
+        <a href="#visit" class="nav-link">Visit Us</a>
+        <a href="#reserve" class="btn btn-gold btn-sm nav-cta">Reserve a Table</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ══════════ HERO ══════════ -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1800&q=80" alt="" aria-hidden="true" />
+    </div>
+    <div class="hero-vignette" aria-hidden="true"></div>
+
+    <div class="container hero-content">
+      <p class="eyebrow hero-fade" style="--d:.1s">Est. 2016 · Bandra West, Mumbai</p>
+      <h1 class="hero-title">
+        <span class="hero-fade" style="--d:.25s">Shelter from</span>
+        <span class="hero-fade gold-text" style="--d:.4s">ordinary food.</span>
+      </h1>
+      <p class="hero-sub hero-fade" style="--d:.55s">
+        Dark-fired patties. House-baked brioche. Sauces we guard like family secrets.
+        Every burger, crafted under one roof — and one umbrella.
+      </p>
+      <div class="hero-actions hero-fade" style="--d:.7s">
+        <a href="#menu" class="btn btn-gold">Explore the Menu</a>
+        <a href="#reserve" class="btn btn-ghost">Reserve a Table</a>
+      </div>
+    </div>
+
+    <a href="#story" class="scroll-hint" aria-label="Scroll down">
+      <span class="scroll-hint-line"></span>
+      <span class="scroll-hint-text">Scroll</span>
+    </a>
+  </section>
+
+  <!-- ══════════ MARQUEE ══════════ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Hand-smashed daily</span><i>☂</i>
+      <span>House-baked brioche</span><i>☂</i>
+      <span>Slow-rendered beef tallow</span><i>☂</i>
+      <span>Secret rain-day sauce</span><i>☂</i>
+      <span>Hand-smashed daily</span><i>☂</i>
+      <span>House-baked brioche</span><i>☂</i>
+      <span>Slow-rendered beef tallow</span><i>☂</i>
+      <span>Secret rain-day sauce</span><i>☂</i>
+    </div>
+  </div>
+
+  <!-- ══════════ STORY ══════════ -->
+  <section class="section story" id="story">
+    <div class="container story-grid">
+      <div class="story-media reveal">
+        <div class="img-frame story-img-main">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80" alt="Warm, moody interior of Umbrella Burger" loading="lazy" />
+        </div>
+        <div class="img-frame story-img-float">
+          <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80" alt="Signature Umbrella Burger" loading="lazy" />
+        </div>
+        <div class="story-badge">
+          <span class="story-badge-num">8+</span>
+          <span class="story-badge-label">Years of<br/>craft</span>
+        </div>
+      </div>
+
+      <div class="story-text">
+        <p class="eyebrow reveal">Our Story</p>
+        <h2 class="title reveal">Born on a rainy evening,<br/><span class="gold-text">under one umbrella.</span></h2>
+        <p class="reveal">
+          Monsoon, 2016. Two friends, one shared umbrella, and a street-side burger that
+          somehow tasted better in the rain. That night we made a promise — to build a place
+          where every burger feels like shelter: warm, generous, and impossible to forget.
+        </p>
+        <p class="reveal">
+          Today, Umbrella Burger is Bandra's slow-obsessed burger house. We smash our patties
+          by hand every morning, bake our brioche in-house every four hours, and finish every
+          plate under low amber light — the way it deserves.
+        </p>
+
+        <div class="stats reveal">
+          <div class="stat">
+            <span class="stat-num" data-count="1200000" data-suffix="+">0</span>
+            <span class="stat-label">Burgers served</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="49" data-decimal="1">0</span>
+            <span class="stat-label">Average rating</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="14" data-suffix="">0</span>
+            <span class="stat-label">Craft awards</span>
+          </div>
+        </div>
+
+        <a href="#menu" class="btn btn-outline reveal">Taste the Story</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ MENU ══════════ -->
+  <section class="section menu" id="menu">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">The Menu</p>
+        <h2 class="title">Keep it <span class="gold-text">simple.</span></h2>
+        <p class="section-sub">One burger, done right. Crispy chicken, real soft serve, local beer. That's the whole philosophy.</p>
+      </div>
+
+      <div class="menu-tabs reveal" role="tablist" aria-label="Menu categories">
+        <button class="menu-tab is-active" data-tab="burgers" role="tab" aria-selected="true">Burgers</button>
+        <button class="menu-tab" data-tab="chicken" role="tab" aria-selected="false">Chicken</button>
+        <button class="menu-tab" data-tab="sides" role="tab" aria-selected="false">Sides &amp; Mac</button>
+        <button class="menu-tab" data-tab="shakes" role="tab" aria-selected="false">Shakes</button>
+        <button class="menu-tab" data-tab="drinks" role="tab" aria-selected="false">Drinks</button>
+      </div>
+
+      <!-- Burgers -->
+      <div class="menu-panel is-active" data-panel="burgers">
+        <div class="menu-grid menu-grid-4">
+          <article class="dish reveal">
+            <div class="img-frame dish-img">
+              <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=800&q=80" alt="The Umbrella Burger, single" loading="lazy" />
+            </div>
+            <div class="dish-body">
+              <div class="dish-row"><h3>Umbrella Burger · Single</h3><span class="dish-price">$9.75</span></div>
+              <p>American cheddar, lettuce, crinkle cut pickles, onion, burger sauce.</p>
+            </div>
+          </article>
+
+          <article class="dish reveal">
+            <div class="img-frame dish-img">
+              <img src="https://images.unsplash.com/photo-1607013251379-e6eecfffe234?auto=format&fit=crop&w=800&q=80" alt="The Umbrella Burger, double" loading="lazy" />
+              <span class="dish-tag">Bestseller</span>
+            </div>
+            <div class="dish-body">
+              <div class="dish-row"><h3>Umbrella Burger · Double</h3><span class="dish-price">$12.95</span></div>
+              <p>Two patties, double American cheddar, lettuce, crinkle cut pickles, onion, burger sauce.</p>
+            </div>
+          </article>
+
+          <article class="dish reveal">
+            <div class="img-frame dish-img">
+              <img src="https://images.unsplash.com/photo-1520072959219-c595dc870360?auto=format&fit=crop&w=800&q=80" alt="Beyond Burger, single" loading="lazy" />
+              <span class="dish-tag dish-tag-veg">Plant-based</span>
+            </div>
+            <div class="dish-body">
+              <div class="dish-row"><h3>Beyond Single</h3><span class="dish-price">$10.25</span></div>
+              <p>Beyond plant-based patty, American cheddar, lettuce, crinkle cut pickles, onion, burger sauce.</p>
+            </div>
+          </article>
+
+          <article class="dish reveal">
+            <div class="img-frame dish-img">
+              <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?auto=format&fit=crop&w=800&q=80" alt="Beyond Burger, double" loading="lazy" />
+              <span class="dish-tag dish-tag-veg">Plant-based</span>
+            </div>
+            <div class="dish-body">
+              <div class="dish-row"><h3>Beyond Double</h3><span class="dish-price">$13.95</span></div>
+              <p>Two Beyond patties, double cheddar, lettuce, crinkle cut pickles, onion, burger sauce.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="addons reveal">
+          <h4>You Do You <span>— add to any burger or sandwich</span></h4>
+          <ul>
+            <li>Bacon <b>+$2.50</b></li>
+            <li>Sliced Tomato <b>Free</b></li>
+            <li>Hot Pepper Relish <b>Free</b></li>
+            <li>Ketchup · Mustard · Mayo · BBQ <b>Free</b></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Chicken -->
+      <div class="menu-panel" data-panel="chicken">
+        <ul class="price-list">
+          <li class="price-item reveal">
+            <div class="price-item-head"><h3>The Chicken Sandwich</h3><span class="dots"></span><span class="dish-price">$12.95</span></div>
+            <p>Secret-blend breaded crispy chicken breast, slaw, crinkle cut pickles &amp; chicken sauce.</p>
+          </li>
+          <li class="price-item reveal">
+            <div class="price-item-head"><h3>Chicken Sandwich, Burger Style</h3><span class="dots"></span><span class="dish-price">$12.95</span></div>
+            <p>American cheddar, lettuce, crinkle cut pickles, onion, burger sauce.</p>
+          </li>
+          <li class="price-item reveal">
+            <div class="price-item-head"><h3>Jumbo Chicken Strips · 3-Piece</h3><span class="dots"></span><span class="dish-price">$8.50</span></div>
+            <p>Hand-breaded all-white strips, spiced the way you like.</p>
+          </li>
+          <li class="price-item reveal">
+            <div class="price-item-head"><h3>Jumbo Chicken Strips · 6-Piece</h3><span class="dots"></span><span class="dish-price">$15.50</span></div>
+            <p>Same hand-breaded strips. Twice the commitment.</p>
+          </li>
+        </ul>
+
+        <div class="heat-scale reveal" aria-label="Heat levels">
+          <span class="heat-label">How hot?</span>
+          <span class="heat heat-1">Classic Southern</span>
+          <span class="heat heat-2">Medium</span>
+          <span class="heat heat-3">Hot</span>
+          <span class="heat heat-4">Xtra Hot</span>
+        </div>
+      </div>
+
+      <!-- Sides & Mac -->
+      <div class="menu-panel" data-panel="sides">
+        <ul class="price-list">
+          <li class="price-item reveal">
+            <div class="price-item-head"><h3>Mac N' Cheese</h3><span class="dots"></span><span class="dish-price">$14.35</span></div>
+            <p>Applewood smoked cheddar sauce, cream, gooey brick cheese finish. Make it Bacon Mac +$3.00 · Fried Chicken Mac +$5.00.</p>
+          </li>
+          <li class="price-item reveal">
+            <div class="price-item-head"><h3>Fries</h3><span class="dots"></span><span class="dish-price">$5.15</span></div>
+            <p>Crispy, golden, salted. The classic.</p>
+          </li>
+          <li class="price-item reveal">
+            <div class="price-item-head"><h3>Sweet Potato Fries</h3><span class="dots"></span><span class="dish-price">$7.10</span></div>
+            <p>Sweet, crispy, dangerously snackable.</p>
+          </li>
+          <li class="price-item reveal">
+            <div class="price-item-head"><h3>Spiced Curly Fries</h3><span class="dots"></span><span class="dish-price">$6.85</span></div>
+            <p>Seasoned spirals with a gentle kick.</p>
+          </li>
+          <li class="price-item reveal">
+            <div class="price-item-head"><h3>Poutine</h3><span class="dots"></span><span class="dish-price">$9.85</span></div>
+            <p>Fries, squeaky cheese curds, rich hot gravy. As it should be.</p>
+          </li>
+          <li class="price-item reveal">
+            <div class="price-item-head"><h3>Dill Pickle Broccoli Salad</h3><span class="dots"></span><span class="dish-price">$8.50</span></div>
+            <p>Crunchy, briny, and fresher than you'd expect from a burger joint.</p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Shakes -->
+      <div class="menu-panel" data-panel="shakes">
+        <ul class="price-list">
+          <li class="price-item reveal">
+            <div class="price-item-head"><h3>Milk Chocolate</h3><span class="dots"></span><span class="dish-price">$7.60</span></div>
+            <p>Real soft serve, hand-spun with milk chocolate.</p>
+          </li>
+          <li class="price-item reveal">
+            <div class="price-item-head"><h3>Peanut Butter Banana</h3><span class="dots"></span><span class="dish-price">$7.60</span></div>
+            <p>Soft serve, roasted peanut butter, ripe banana.</p>
+          </li>
+          <li class="price-item reveal">
+            <div class="price-item-head"><h3>Cookies &amp; Cream</h3><span class="dots"></span><span class="dish-price">$7.60</span></div>
+            <p>Soft serve loaded with crushed chocolate cookies.</p>
+          </li>
+          <li class="price-item reveal">
+            <div class="price-item-head"><h3>Strawberry</h3><span class="dots"></span><span class="dish-price">$7.60</span></div>
+            <p>Soft serve and sweet strawberry. A classic for a reason.</p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Drinks -->
+      <div class="menu-panel" data-panel="drinks">
+        <ul class="price-list">
+          <li class="price-item reveal">
+            <div class="price-item-head"><h3>Soft Drinks</h3><span class="dots"></span><span class="dish-price">$2.60</span></div>
+            <p>Coke · Diet Coke · Coke Zero · Ginger Ale · 7Up · Orange Crush · Cream Soda · Dr. Pepper · Root Beer · Water.</p>
+          </li>
+          <li class="price-item reveal">
+            <div class="price-item-head"><h3>Broadhead Amber Ale <em class="seasonal">5%</em></h3><span class="dots"></span><span class="dish-price">$7.75</span></div>
+            <p>Local craft amber, 473 ml can.</p>
+          </li>
+          <li class="price-item reveal">
+            <div class="price-item-head"><h3>Broadhead Blueberry Blonde <em class="seasonal">5%</em></h3><span class="dots"></span><span class="dish-price">$7.75</span></div>
+            <p>Light blonde ale with a hint of blueberry, 473 ml.</p>
+          </li>
+          <li class="price-item reveal">
+            <div class="price-item-head"><h3>Dominion City Sunsplit IPA <em class="seasonal">6.5%</em></h3><span class="dots"></span><span class="dish-price">$7.75</span></div>
+            <p>Juicy, hazy, hop-forward, 473 ml.</p>
+          </li>
+          <li class="price-item reveal">
+            <div class="price-item-head"><h3>Collective Arts Life In The Clouds <em class="seasonal">6.1%</em></h3><span class="dots"></span><span class="dish-price">$7.75</span></div>
+            <p>Hazy IPA from the art-label people, 473 ml.</p>
+          </li>
+          <li class="price-item reveal">
+            <div class="price-item-head"><h3>Saunders Cider · Candy Apple <em class="seasonal">5%</em></h3><span class="dots"></span><span class="dish-price">$7.75</span></div>
+            <p>Crisp local cider, candy-apple sweet, 473 ml.</p>
+          </li>
+          <li class="price-item reveal">
+            <div class="price-item-head"><h3>Saunders Cider · Flying Canoe <em class="seasonal">5%</em></h3><span class="dots"></span><span class="dish-price">$7.75</span></div>
+            <p>Dry, bright, and dangerously easy-drinking, 473 ml.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ BANNER ══════════ -->
+  <section class="banner">
+    <div class="container banner-inner reveal">
+      <svg class="banner-umbrella" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M12 2C6.2 2 1.6 6.4 1.2 12h21.6C22.4 6.4 17.8 2 12 2z"/>
+        <path d="M11 13v6.2a2.8 2.8 0 0 0 5.6 0V18h-2v1.2a.8.8 0 0 1-1.6 0V13h-2z"/>
+      </svg>
+      <h2 class="banner-title">Rainy day? Every classic burger is <span class="gold-text">20% off</span> when it pours.</h2>
+      <p class="banner-sub">The Monsoon Promise — our thank-you to the weather that started it all.</p>
+    </div>
+  </section>
+
+  <!-- ══════════ GALLERY ══════════ -->
+  <section class="section gallery" id="gallery">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Gallery</p>
+        <h2 class="title">Low light. <span class="gold-text">High cravings.</span></h2>
+      </div>
+
+      <div class="gallery-grid">
+        <button class="gallery-item img-frame reveal g-tall" data-full="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1400&q=80">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=700&q=80" alt="Plated dish under warm light" loading="lazy" />
+        </button>
+        <button class="gallery-item img-frame reveal" data-full="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1400&q=80">
+          <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=700&q=80" alt="Restaurant interior at dusk" loading="lazy" />
+        </button>
+        <button class="gallery-item img-frame reveal" data-full="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1400&q=80">
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80" alt="Signature cheeseburger close-up" loading="lazy" />
+        </button>
+        <button class="gallery-item img-frame reveal g-tall" data-full="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1400&q=80">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=700&q=80" alt="Fire-grilled meats" loading="lazy" />
+        </button>
+        <button class="gallery-item img-frame reveal" data-full="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1400&q=80">
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=700&q=80" alt="Table spread of shared plates" loading="lazy" />
+        </button>
+        <button class="gallery-item img-frame reveal" data-full="https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&fit=crop&w=1400&q=80">
+          <img src="https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&fit=crop&w=700&q=80" alt="Hand-spun milkshake" loading="lazy" />
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ REVIEWS ══════════ -->
+  <section class="section reviews" id="reviews">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Reviews</p>
+        <h2 class="title">Word on the <span class="gold-text">(rainy) street.</span></h2>
+      </div>
+
+      <div class="slider reveal" id="reviewSlider">
+        <div class="slider-track" id="sliderTrack">
+          <blockquote class="review">
+            <div class="review-stars">★★★★★</div>
+            <p>"The Double ruined every other burger in the city for me. The room is dark, the light is gold, and that burger sauce is criminal. I've been back eleven times."</p>
+            <footer><strong>Aisha Verma</strong><span>Food writer, Mumbai Bites</span></footer>
+          </blockquote>
+          <blockquote class="review">
+            <div class="review-stars">★★★★★</div>
+            <p>"Came for the rain discount, stayed for the Fried Chicken Mac. This place treats a burger like fine dining without ever being pretentious about it."</p>
+            <footer><strong>Rohan Mehta</strong><span>Regular since 2018</span></footer>
+          </blockquote>
+          <blockquote class="review">
+            <div class="review-stars">★★★★★</div>
+            <p>"Best date-night spot around that doesn't require a dress code. The cookies &amp; cream shake alone deserves its own review."</p>
+            <footer><strong>Priya Nair</strong><span>Google review</span></footer>
+          </blockquote>
+          <blockquote class="review">
+            <div class="review-stars">★★★★★</div>
+            <p>"As a chef, I notice details — the crinkle cut pickles, the secret chicken blend, the seasoned smash crust. These people care. Deeply."</p>
+            <footer><strong>Chef Daniel Fernandes</strong><span>The Coastal Table</span></footer>
+          </blockquote>
+        </div>
+
+        <div class="slider-nav">
+          <button class="slider-arrow" id="prevReview" aria-label="Previous review">←</button>
+          <div class="slider-dots" id="sliderDots"></div>
+          <button class="slider-arrow" id="nextReview" aria-label="Next review">→</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ RESERVE ══════════ -->
+  <section class="section reserve" id="reserve">
+    <div class="container reserve-grid">
+      <div class="reserve-text">
+        <p class="eyebrow reveal">Reservations</p>
+        <h2 class="title reveal">Save your seat<br/><span class="gold-text">under the umbrella.</span></h2>
+        <p class="reveal">
+          Twelve tables. Amber light. The low hum of a very good evening.
+          Book ahead — Fridays and rainy days disappear fast.
+        </p>
+        <ul class="reserve-perks reveal">
+          <li>Complimentary chicken strips for birthdays</li>
+          <li>Window seats face the rain — ask for one</li>
+          <li>Groups of 8+? Call us for the Long Table</li>
+        </ul>
+      </div>
+
+      <form class="card form reveal" id="reserveForm" novalidate>
+        <div class="form-row">
+          <div class="field">
+            <label for="rName">Full name</label>
+            <input type="text" id="rName" name="name" placeholder="Your name" required />
+          </div>
+          <div class="field">
+            <label for="rPhone">Phone</label>
+            <input type="tel" id="rPhone" name="phone" placeholder="+91 " required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="rDate">Date</label>
+            <input type="date" id="rDate" name="date" required />
+          </div>
+          <div class="field">
+            <label for="rTime">Time</label>
+            <select id="rTime" name="time" required>
+              <option value="" disabled selected>Select time</option>
+              <option>12:30 PM</option><option>1:30 PM</option><option>2:30 PM</option>
+              <option>7:00 PM</option><option>8:00 PM</option><option>9:00 PM</option><option>10:00 PM</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="rGuests">Guests</label>
+            <select id="rGuests" name="guests" required>
+              <option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8+</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="rNote">Special requests <span class="optional">(optional)</span></label>
+          <textarea id="rNote" name="note" rows="2" placeholder="Anniversary, window seat, allergies…"></textarea>
+        </div>
+        <button type="submit" class="btn btn-gold btn-block">Confirm Reservation</button>
+        <p class="form-fineprint">Demo site — no real booking is made.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ══════════ VISIT ══════════ -->
+  <section class="section visit" id="visit">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Visit Us</p>
+        <h2 class="title">Find the <span class="gold-text">golden glow.</span></h2>
+      </div>
+
+      <div class="visit-grid">
+        <div class="visit-map img-frame reveal">
+          <iframe
+            title="Umbrella Burger location map"
+            src="https://www.google.com/maps?q=Linking+Road,+Bandra+West,+Mumbai&output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+
+        <div class="visit-info">
+          <div class="visit-card card reveal">
+            <h3>Address</h3>
+            <p>42 Linking Road, Bandra West<br/>Mumbai, Maharashtra 400050</p>
+          </div>
+          <div class="visit-card card reveal">
+            <h3>Hours</h3>
+            <ul class="hours">
+              <li><span>Mon – Thu</span><span>12:00 PM – 11:00 PM</span></li>
+              <li><span>Fri – Sat</span><span>12:00 PM – 1:00 AM</span></li>
+              <li><span>Sunday</span><span>11:00 AM – 11:00 PM</span></li>
+            </ul>
+          </div>
+          <div class="visit-card card reveal">
+            <h3>Contact</h3>
+            <p><a href="tel:+919876543210">+91 98765 43210</a><br/>
+            <a href="mailto:hello@umbrellaburger.in">hello@umbrellaburger.in</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ CONTACT ══════════ -->
+  <section class="section contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-text">
+        <p class="eyebrow reveal">Say Hello</p>
+        <h2 class="title reveal">Questions, events,<br/><span class="gold-text">or just cravings?</span></h2>
+        <p class="reveal">Private events, catering, press, or a burger idea you can't stop thinking about — write to us. A human reads every message.</p>
+      </div>
+      <form class="card form reveal" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="field">
+            <label for="cName">Name</label>
+            <input type="text" id="cName" name="name" placeholder="Your name" required />
+          </div>
+          <div class="field">
+            <label for="cEmail">Email</label>
+            <input type="email" id="cEmail" name="email" placeholder="you@email.com" required />
+          </div>
+        </div>
+        <div class="field">
+          <label for="cMsg">Message</label>
+          <textarea id="cMsg" name="message" rows="4" placeholder="Tell us everything…" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-gold btn-block">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="brand">
+          <svg class="brand-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2C6.2 2 1.6 6.4 1.2 12h21.6C22.4 6.4 17.8 2 12 2z"/>
+            <path d="M11 13v6.2a2.8 2.8 0 0 0 5.6 0V18h-2v1.2a.8.8 0 0 1-1.6 0V13h-2z"/>
+          </svg>
+          <span class="brand-name">Umbrella<em>Burger</em></span>
+        </a>
+        <p>Shelter from ordinary food.<br/>Bandra West, Mumbai — since 2016.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="X">X</a>
+          <a href="#" aria-label="YouTube">YT</a>
+        </div>
+      </div>
+
+      <nav class="footer-col" aria-label="Explore">
+        <h4>Explore</h4>
+        <a href="#story">Our Story</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+      </nav>
+
+      <nav class="footer-col" aria-label="Visit">
+        <h4>Visit</h4>
+        <a href="#reserve">Reservations</a>
+        <a href="#visit">Location &amp; Hours</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="footer-col footer-news">
+        <h4>The Rain Letter</h4>
+        <p>One email a month. New burgers, secret menu drops, monsoon deals.</p>
+        <form class="news-form" id="newsForm" novalidate>
+          <input type="email" placeholder="you@email.com" aria-label="Email address" required />
+          <button type="submit" class="btn btn-gold btn-sm">Join</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 Umbrella Burger. A demo website — all content fictional.</p>
+      <p>Crafted with ☂ in Mumbai</p>
+    </div>
+  </footer>
+
+  <!-- ══════════ LIGHTBOX ══════════ -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close image">✕</button>
+    <img id="lightboxImg" src="" alt="Gallery image, enlarged" />
+  </div>
+
+  <!-- ══════════ TOAST + TOP ══════════ -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
